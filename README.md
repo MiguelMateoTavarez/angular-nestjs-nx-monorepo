@@ -1,26 +1,20 @@
 # Maxim
 <p align="center">
-    <a href="https://angular.dev" target="_blank">
-        <img 
-            src="./logos/angular.svg" 
-            alt="Angular Logo"
-            height=120
-        />
-    </a>
-    <a href="https://nx.dev" target="_blank">
-        <img 
-            src="./logos/nx.svg" 
-            alt="Nx logo"
-            height=120
-        />
-    </a>
-    <a href="https://nestjs.com" target="_blank">
-        <img 
-            src="./logos/nestjs.svg" 
-            alt="NestJS Logo"
-            height=120
-        />
-    </a>
+    <img 
+        src="./logos/angular.svg" 
+        alt="Angular Logo"
+        height=120
+    />
+    <img 
+        src="./logos/nx.svg" 
+        alt="Nx logo"
+        height=120
+    />
+    <img 
+        src="./logos/nestjs.svg" 
+        alt="NestJS Logo"
+        height=120
+    />
 </p>
 
 ## Inicializar proyecto
