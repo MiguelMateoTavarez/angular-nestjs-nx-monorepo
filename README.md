@@ -1,72 +1,90 @@
 # Maxim
+<p align="center">
+    <a href="https://angular.dev" target="_blank">
+        <img 
+            src="https://angular.dev/assets/images/press-kit/angular_icon_gradient.gif" 
+            alt="Angular Logo"
+            style="height:120px; width:auto; object-fit:contain;"
+        />
+    </a>
+    <a href="https://nx.dev" target="_blank">
+        <img 
+            src="https://nx.dev/docs/_astro/Nx-light.Bdo2Q-iZ.svg" 
+            alt="Nx logo"
+            style="height:120px; width:auto; object-fit:contain;"
+        />
+    </a>
+    <a href="https://nestjs.com" target="_blank">
+        <img 
+            src="https://nestjs.com/img/logo-small.svg" 
+            alt="NestJS Logo"
+            style="height:120px; width:auto; object-fit:contain;"
+        />
+    </a>
+</p>
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+## Inicializar proyecto
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
-
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/js?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
-
-## Finish your CI setup
-
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/Z2MwBCHdMY)
-
-
-## Generate a library
-
-```sh
-npx nx g @nx/js:lib packages/pkg1 --publishable --importPath=@my-org/pkg1
+```bash 
+pnpm nx serve client
 ```
 
-## Run tasks
+## Comandos Útiles
 
-To build the library use:
+### Generar Librería
 
-```sh
-npx nx build pkg1
+Para generar una nueva librería en el monorepo:
+
+```bash
+# Angular Library
+pnpm nx g @nx/angular:lib my-lib
+
+# NestJS Library
+pnpm nx g @nx/nest:lib my-lib
 ```
 
-To run any task with Nx use:
+### Angular (Client)
 
-```sh
-npx nx <target> <project-name>
+Comandos para generar elementos dentro de la aplicación Angular (`client`):
+
+```bash
+# Generar Componente
+pnpm nx g @nx/angular:component my-component --project=client
+
+# Generar Servicio
+pnpm nx g @nx/angular:service my-service --project=client
+
+# Generar Módulo
+pnpm nx g @nx/angular:module my-module --project=client
+
+# Generar Pipe
+pnpm nx g @nx/angular:pipe my-pipe --project=client
+
+# Generar Directiva
+pnpm nx g @nx/angular:directive my-directive --project=client
 ```
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+### NestJS (API)
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+Comandos para generar elementos dentro de la aplicación NestJS (`api`):
 
-## Versioning and releasing
+```bash
+# Generar Recurso (CRUD completo: Module, Controller, Service, DTO, Entity)
+pnpm nx g @nx/nest:resource my-resource --project=api
 
-To version and release the library use
+# Generar Controlador
+pnpm nx g @nx/nest:controller my-controller --project=api
 
+# Generar Servicio
+pnpm nx g @nx/nest:service my-service --project=api
+
+# Generar Módulo
+pnpm nx g @nx/nest:module my-module --project=api
 ```
-npx nx release
+
+### Ejecutar Aplicaciones
+
+```bash
+# Ejecutar Monorepo
+pnpm nx serve client
 ```
-
-Pass `--dry-run` to see what would happen without actually releasing the library.
-
-[Learn more about Nx release &raquo;](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/nx-api/js?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
