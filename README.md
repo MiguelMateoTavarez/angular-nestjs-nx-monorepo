@@ -2,23 +2,23 @@
 <p align="center">
     <a href="https://angular.dev" target="_blank">
         <img 
-            src="https://angular.dev/assets/images/press-kit/angular_icon_gradient.gif" 
+            src="./logos/angular.svg" 
             alt="Angular Logo"
-            style="height:120px; width:auto; object-fit:contain;"
+            height=120
         />
     </a>
     <a href="https://nx.dev" target="_blank">
         <img 
-            src="https://nx.dev/docs/_astro/Nx-light.Bdo2Q-iZ.svg" 
+            src="./logos/nx.svg" 
             alt="Nx logo"
-            style="height:120px; width:auto; object-fit:contain;"
+            height=120
         />
     </a>
     <a href="https://nestjs.com" target="_blank">
         <img 
-            src="https://nestjs.com/img/logo-small.svg" 
+            src="./logos/nestjs.svg" 
             alt="NestJS Logo"
-            style="height:120px; width:auto; object-fit:contain;"
+            height=120
         />
     </a>
 </p>
