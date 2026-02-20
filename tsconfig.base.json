@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@maxim/interfaces": ["libs/shared/interfaces/src/index.ts"]
+      "@maxim/interfaces": ["libs/shared/interfaces/src/index.ts"],
+      "@maxim/database": ["libs/shared/database/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
